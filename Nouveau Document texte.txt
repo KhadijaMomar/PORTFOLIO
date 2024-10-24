@@ -1,0 +1,8 @@
+https://www.typewolf.com/ : pour la police des texte
+https://color.adobe.com/fr/trends, https://coolors.co/ pour les couleurs
+https://www.awwwards.com/ : pour s'inspirer des plus beaux sites internet
+
+https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3
+
+
+Dans le readme on peut mettre la couleur quon a choisit le font du texte decrire mettre le liens qui menent vers la page en disant voici la page
