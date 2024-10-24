@@ -1,0 +1,26 @@
+@import url(./reset.css);
+.banniere-header{
+    display: flex;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.banniere-header a{
+    color: white;
+}
+.background-black{
+    background-color: black;
+}
+.color-text-white{
+    color: white;
+}
+.color-primary{
+    color: aqua;
+}

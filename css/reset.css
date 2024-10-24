@@ -1,0 +1,10 @@
+html{
+    font-size: 62.5%;
+}
+body{
+  
+    font: 1.6rem "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
