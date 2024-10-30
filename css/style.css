@@ -1,5 +1,51 @@
 @import url(./reset.css);
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale();
+}
+/*text-shadow permet d'ajouter une ombre portée autour du texte*/
+.logo span{
+    text-shadow: 0 0 1.153rem var(--main-color);
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 0.188rem solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    /*border-bottom : applique une bordure en bas de l’élément, avec une épaisseur de 0,188 rem*/
+    border-bottom: 0.188rem solid var(--main-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    /*display: none; est utilisée pour masquer complètement un élément de la page.*/
+    display: none;
+}
 .flex{
     display: flex;
 }
@@ -26,4 +72,7 @@ header section div a{
 }
 .color-primary{
     color: aqua;
+}
+div a{
+    margin-left: 4rem;
 }
