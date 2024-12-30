@@ -76,26 +76,31 @@ section {
 }
 
 span {
-     color: var(--main-color);
-}
-.logo span{
     color: var(--main-color);
 }
-.home-content h3{
-    margin-bottom:2rem ;
+
+.logo span {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 2.5rem;
 }
-.home-content h1{
+
+.home-content h1 {
     font-size: 5rem;
     margin-top: 1.5rem;
     font-weight: 700;
     line-height: 1;
 }
-.home-img{
+
+.home-img {
     border-radius: 50%;
 }
-.home-img img{
+
+.home-img img {
     position: relative;
     top: 3rem;
     width: 25vw;
@@ -104,18 +109,21 @@ span {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.home-img img:hover{
+
+.home-img img:hover {
     box-shadow: 0 0 1.563rem var(--main-color),
-                0 0 3.125rem var(--main-color),
-                0 0 6.25rem var(--main-color);
+        0 0 3.125rem var(--main-color),
+        0 0 6.25rem var(--main-color);
 }
-.home-content p{
+
+.home-content p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 62.5rem;
 }
-.social-icons a{
+
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -129,13 +137,15 @@ span {
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: var(--main-color);
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 1.563rem var(--main-color);
     background-color: white;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -150,77 +160,93 @@ span {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.05);
-   box-shadow: 0 0 3.125rem var(--main-color);
+    box-shadow: 0 0 3.125rem var(--main-color);
 }
-.btn-group{
+
+.btn-group {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.btn-group a:nth-of-type(2){
+
+.btn-group a:nth-of-type(2) {
     background-color: black;
     color: var(--main-color);
     border: 0.125rem solid var(--main-color);
     box-shadow: 0 0 1.563rem transparent;
 }
-.btn-group a:nth-of-type(2):hover{
+
+.btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 1.563rem var(--main-color);
     background-color: var(--main-color);
     color: black;
 }
-.text-animation{
+
+.text-animation {
     font-size: 2.125rem;
     font-weight: 600;
     min-width: 12.5rem;
 }
-.text-animation span{
+
+.text-animation span {
     position: relative;
 }
-.text-animation span::before{
+
+.text-animation span::before {
     content: "";
     color: var(--main-color);
     animation: words 20s infinite;
 }
-.text-animation span::after{
+
+.text-animation span::after {
     content: "";
     background-color: var(--main-color);
     width: calc(100% + 0.5rem);
     height: 100%;
-    border-left: 0.188rem solid var(--bg-color) ;
+    border-left: 0.188rem solid var(--bg-color);
     right: -0.5rem;
     animation: cursor 0.6s infinite, typing 20s steps(14 infinite);
 }
-@keyframes cursor{
-    to{
+
+@keyframes cursor {
+    to {
         border-left: 0.125rem solid var(--main-color);
     }
 }
-@keyframes words{
+
+@keyframes words {
+
     0%,
-    20%{
+    20% {
         content: "étudiante en BTS SIO";
     }
+
     21%,
-    40%{
+    40% {
         content: "Développeuse en apprentissage";
     }
+
     41%,
-    60%{
+    60% {
         content: "étudiante en BTS SIO";
     }
+
     61%,
-    80%{
+    80% {
         content: "Développeuse en apprentissage";
     }
+
     81%,
-    100%{
-        
+    100% {
+
         content: "étudiante en BTS SIO";
     }
 }
-@keyframes typing{
+
+@keyframes typing {
+
     10%,
     15%,
     30%,
@@ -230,9 +256,10 @@ span {
     70%,
     75%,
     90%,
-    95%{
+    95% {
         width: 0;
     }
+
     5%,
     20%,
     25%,
@@ -240,10 +267,11 @@ span {
     45%,
     65%,
     80%,
-    85%{
+    85% {
         width: calc(100% + 0.5rem);
     }
 }
+
 /*
 .flex{
     display: flex;
