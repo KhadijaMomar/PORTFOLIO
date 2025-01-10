@@ -244,7 +244,9 @@ span {
         content: "étudiante en BTS SIO";
     }
 }
-
+.text-animation::after {
+    animation: words 3s infinite;
+}
 @keyframes typing {
 
     10%,
@@ -272,34 +274,3 @@ span {
     }
 }
 
-/*
-.flex{
-    display: flex;
-}
-.center{
-    align-items: center;
-}
-.space-around{
-    justify-content: space-around;
-}
-.column-gap{
-    column-gap: 2rem;
-}
-.flex-grow1{
-    flex-grow: 1;
-}
-header section div a{
-    color: white;
-}
-.background-black{
-    background-color: black;
-}
-.color-text-white{
-    color: white;
-}
-.color-primary{
-    color: aqua;
-}
-div a{
-    margin-left: 4rem;
-}*/
