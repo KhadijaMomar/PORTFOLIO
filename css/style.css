@@ -471,6 +471,7 @@ span {
     color: black;
     border: 0.313rem solid var(--main-color);
     transform: scale(1.03);
+
 }
 .services .pres2{
     color: white;
@@ -478,6 +479,9 @@ span {
     text-align: center;
     margin-bottom: 5rem;
     text-decoration: underline;
+}
+.services .pres2:hover{
+    color: var(--main-color);
 }
 .services-container{
     display: grid;
