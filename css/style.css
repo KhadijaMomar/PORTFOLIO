@@ -551,3 +551,100 @@ canvas {
     height: 100%;
     z-index: -1;
   }
+/*SECTION*/
+
+.contact{
+    background-color: var(--bg-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 0.125rem solid var(--main-color);
+    margin: 1.5rem 0;
+    /*l'utilisateur ne pourra pas modifier la taille de l'élément en faisant glisser ses bords ou coins.*/
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2.5rem 0;
+    background-color: var(--second-bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+
+}
+.footer .social a{
+    font-size: 1.563rem;
+    color: var(--main-color);
+    border: 0.125rem solid var(--main-color);
+    width: 2.625rem;
+    width: 2.625rem;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 0.625rem;
+    transition: 0.3s ease-in-out;
+}  
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 1.563rem var(--main-color);
+}  
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 0.188rem solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 0.188rem solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 0.938rem;
+}
+.footer .copyright{
+    margin-top: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}

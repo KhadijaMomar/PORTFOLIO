@@ -53,7 +53,7 @@
                 </div>
                 <div class="btn-group">
                     <a href="asset/khadija-alter-dev-etiennes (1).pdf" class="btn">Consulter mon CV</a>
-                    <a href="#contact" class="btn">Contact</a>
+                    <a href="#contacts" class="btn">Contact</a>
                 </div>
             </div>
             <div class="home-img">
@@ -204,89 +204,137 @@
             
         </div> -->
     </section>
-    </main>
+    <section class="contact" id="contacts">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="" id="" placeholder="Votre nom">
+                    <input type="text" name="" id="" placeholder="Votre prénom">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="" id="" placeholder="Votre numéro">
+                    <input type="email" name="" id="" placeholder="Votre email">
+                </div>
+            </div>
+            <div class="input-group2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <input type="submit" value="Envoyer" class="btn">
+            </div>
+        </form>
+    </section>
     
+    </main>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-gmail'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Profil</a>
+            </li>
+            <li>
+                <a href="#">Parcours</a>
+            </li>
+            <li>
+                <a href="#">Veille Technologique</a>
+            </li>
+            <li>
+                <a href="#">Projets</a>
+            </li>
+            <li>
+                <a href="#">BTS SIO</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+        <p class="copyright">Copyright © 2025 Khadidiatou SOUARE</p>
+    </footer>
 
     <script>
         const canvas = document.createElement('canvas');
-const ctx = canvas.getContext('2d');
+            const ctx = canvas.getContext('2d');
 
-// Ajouter le canvas à la page
-document.body.appendChild(canvas);
+            // Ajouter le canvas à la page
+            document.body.appendChild(canvas);
 
-// Ajuster la taille du canvas à celle de la fenêtre
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+            // Ajuster la taille du canvas à celle de la fenêtre
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
 
-// Tableau pour stocker les particules
-let particles = [];
+            // Tableau pour stocker les particules
+            let particles = [];
 
-// Fonction pour initialiser les particules
-function initParticles() {
-  particles = [];
-  const numParticles = Math.floor((canvas.width * canvas.height) / 8000);
+            // Fonction pour initialiser les particules
+            function initParticles() {
+            particles = [];
+            const numParticles = Math.floor((canvas.width * canvas.height) / 8000);
 
-  for (let i = 0; i < numParticles; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 2,
-      vy: (Math.random() - 0.5) * 2,
-      size: Math.random() * 2 + 1,
-    });
-  }
-}
+            for (let i = 0; i < numParticles; i++) {
+                particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 2,
+                vy: (Math.random() - 0.5) * 2,
+                size: Math.random() * 2 + 1,
+                });
+            }
+            }
 
-// Fonction pour dessiner les particules
-function drawParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Fonction pour dessiner les particules
+            function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  particles.forEach((particle, index) => {
-    // Dessiner un cercle pour chaque particule
-    ctx.beginPath();
-    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-    ctx.fill();
+            particles.forEach((particle, index) => {
+                // Dessiner un cercle pour chaque particule
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.fill();
 
-    // Mettre à jour la position de la particule
-    particle.x += particle.vx;
-    particle.y += particle.vy;
+                // Mettre à jour la position de la particule
+                particle.x += particle.vx;
+                particle.y += particle.vy;
 
-    // Garder les particules dans les limites du canvas
-    if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
-    if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+                // Garder les particules dans les limites du canvas
+                if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+                if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
 
-    // Relier les particules proches
-    for (let j = index + 1; j < particles.length; j++) {
-      const other = particles[j];
-      const distance = Math.sqrt(
-        (particle.x - other.x) ** 2 + (particle.y - other.y) ** 2
-      );
+                // Relier les particules proches
+                for (let j = index + 1; j < particles.length; j++) {
+                const other = particles[j];
+                const distance = Math.sqrt(
+                    (particle.x - other.x) ** 2 + (particle.y - other.y) ** 2
+                );
 
-      if (distance < 100) {
-        ctx.beginPath();
-        ctx.moveTo(particle.x, particle.y);
-        ctx.lineTo(other.x, other.y);
-        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / 100})`;
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
-      }
-    }
-  });
+                if (distance < 100) {
+                    ctx.beginPath();
+                    ctx.moveTo(particle.x, particle.y);
+                    ctx.lineTo(other.x, other.y);
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / 100})`;
+                    ctx.lineWidth = 0.5;
+                    ctx.stroke();
+                }
+                }
+            });
 
-  requestAnimationFrame(drawParticles);
-}
+            requestAnimationFrame(drawParticles);
+            }
 
-// Ajuster la taille du canvas si la fenêtre est redimensionnée
-window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  initParticles();
-});
+            // Ajuster la taille du canvas si la fenêtre est redimensionnée
+            window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+            });
 
-// Initialiser et démarrer l'animation
-initParticles();
-drawParticles();
+            // Initialiser et démarrer l'animation
+            initParticles();
+            drawParticles();
     </script>
 </body>
 
