@@ -29,7 +29,6 @@ menuIcon.onclick = () => {
 
 let logo = document.getElementById('logo');
 let loginElement = document.getElementById('login');
-let ville = document.getElementById('ville');
 const portfolioLink = document.getElementById('portfolio-link');
 
 fetch('https://api.github.com/users/KhadijaMomar')
@@ -53,7 +52,6 @@ fetch('https://api.github.com/users/KhadijaMomar')
     })
     .catch(error => {
         console.error('Erreur lors de la récupération de l\'URL:', error);
-
         // Optionnel : Mettez un lien de secours en cas d'erreur
         portfolioLink.href = "https://lien-de-secours.com";
     });
