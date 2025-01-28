@@ -907,3 +907,37 @@ canvas {
         font-size: 5rem;
     }
 }
+.profil-content2 h3{
+    color: var(--main-color);
+}
+.competences{
+    margin-top: 5rem;
+}
+
+.competences .skill {
+    margin-bottom: 3rem;
+}
+.competences .skill-name {
+    margin-bottom: 1rem;
+}
+.competences .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.competences .progress {
+    height: 0.5rem;
+    background-color: var(--main-color);
+}
+.container{
+    display: flex;
+    column-gap: 2rem;
+}
+.width50{
+   width: 50%;
+}
+.competences h2{
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
