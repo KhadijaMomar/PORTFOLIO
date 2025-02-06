@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,8 @@ section {
     background: var(--second-bg-color);
     padding: 0 5rem;
 }
-.profil-div{
+
+.profil-div {
     display: flex;
 }
 
@@ -94,11 +95,13 @@ section {
     justify-content: center;
     flex-direction: column;
 }
-.profil-content .heading-2{
+
+.profil-content .heading-2 {
     text-align: left;
     color: var(--main-color);
 }
-.profil-box{
+
+.profil-box {
     background-color: var(--main-color);
     border-radius: 1.5rem;
     border: 0.313rem solid transparent;
@@ -107,12 +110,14 @@ section {
     color: black;
     padding: 1rem;
 }
-.profil-box:hover{
+
+.profil-box:hover {
     background: white;
     color: black;
     border: 0.313rem solid var(--main-color);
     transform: scale(1.03);
 }
+
 span {
     color: var(--main-color);
 }
@@ -734,58 +739,70 @@ canvas {
     color: white;
 }
 
-@media(max-width:1285px){
-    html{
+@media(max-width:1285px) {
+    html {
         font-size: 55%;
-        
+
     }
-    .services-container{
+
+    .services-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
 
-@media (max-width:990px){
-    header{
+@media (max-width:990px) {
+    header {
         padding: 2rem 3%;
-        
+
     }
-    section{
+
+    section {
         padding: 10rem 3% 2rem;
     }
-    .timeline-items::before{
+
+    .timeline-items::before {
         left: 7px;
     }
-    .timeline-item:nth-child(odd){
+
+    .timeline-item:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
+
     .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
+    .timeline-item:nth-child(even) {
         padding-left: 37px;
     }
-    .timeline-dot{
+
+    .timeline-dot {
         left: 0;
     }
-    .services{
+
+    .services {
         padding-bottom: 7rem;
     }
-    .testimoniales .wrapper{
-        grid-template-columns: repeat(1,1fr);
+
+    .testimoniales .wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .contact form{
+
+    .contact form {
         flex-direction: column;
     }
-    .footer{
+
+    .footer {
         padding: 2rem 3%;
     }
 }
-@media(max-width:895px){
-    #menu-icon{
+
+@media(max-width:895px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -798,55 +815,68 @@ canvas {
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
+
+    .home-img img {
         width: 56vw;
     }
-    .services h2{
+
+    .services h2 {
         margin-bottom: 3rem;
     }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .services .pres {
         height: 12rem;
     }
-    .services .pres-v{
+
+    .services .pres-v {
         height: 18rem;
     }
 }
 
-@media(max-width:600px){
-    body{
+@media(max-width:600px) {
+    body {
         width: 100wh;
     }
-    #menu-icon{
+
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -859,85 +889,106 @@ canvas {
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 5rem;
         margin-top: 3rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 500px;
         margin: 0 auto;
     }
-    .home-img img{
+
+    .home-img img {
         width: 40vw;
     }
-    .services h2{
+
+    .services h2 {
         margin-bottom: 3rem;
     }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .services .pres {
         height: 23rem;
         margin: 5rem;
     }
-    .services .pres-v{
+
+    .services .pres-v {
         height: 35rem;
         margin: 4rem;
     }
-    .services-container .services-box{
+
+    .services-container .services-box {
         height: 50rem;
     }
-    .heading{
+
+    .heading {
         font-size: 5rem;
     }
 }
-.profil-content2 h3{
+
+.profil-content2 h3 {
     color: var(--main-color);
 }
-.competences{
+
+.competences {
     margin-top: 5rem;
 }
 
 .competences .skill {
     margin-bottom: 3rem;
 }
+
 .competences .skill-name {
     margin-bottom: 1rem;
 }
+
 .competences .progress-bar {
     width: 100%;
     background-color: #ddd;
     border-radius: 2rem;
     overflow: hidden;
 }
+
 .competences .progress {
     height: 0.5rem;
     background-color: var(--main-color);
 }
-.container{
+
+.container {
     display: flex;
     column-gap: 2rem;
 }
-.width50{
-   width: 50%;
+
+.width50 {
+    width: 50%;
 }
-.competences h2{
+
+.competences h2 {
     margin-bottom: 1rem;
     margin-top: 5rem;
 }
