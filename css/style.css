@@ -490,6 +490,9 @@ span {
     color: white;
     transition: 0.4s ease-in-out;
 }
+.testimonial-item img{
+    height: 17rem;
+}
 
 .testimonial-item:hover {
     border: 0.188rem solid var(--main-color);
