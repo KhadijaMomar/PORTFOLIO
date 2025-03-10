@@ -37,6 +37,11 @@
             color: var(--main-color);
             margin-bottom: 1rem;
         }
+        h4 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
 
         h1 {
             font-size: 3rem;
@@ -191,8 +196,8 @@
     </style>
 </head>
 <body>
-    <h1>Gestion de Personnel</h1>
-    <p>Ce projet consiste en une application de gestion de personnel permettant de gérer les employés, leurs informations et leurs dates d'arrivée et de départ. Il a été développé en Java avec une interface en ligne de commande et une base de données relationnelle.</p>
+    <!-- <h1>Gestion de Personnel</h1>
+    <p>Ce projet vise à développer une application permettant de gérer efficacement les employés au sein de différentes ligues. L'objectif principal est de faciliter l'organisation des employés en offrant une interface simple et intuitive pour effectuer diverses opérations. L'application est développée en Java avec une interface en ligne de commande (CLI) et une base de données MySQL.</p>
 
     <h2>Fonctionnalités principales</h2>
     <h3>Gestion des Ligues</h3>
@@ -215,8 +220,85 @@
     <ul>
         <li>Gestion des administrateurs (affichage de l'administrateur d'une ligue).</li>
         <li>Interface en ligne de commande (CLI) pour une navigation simple.</li>
-    </ul>
+    </ul> -->
+    <h1>Projet de Gestion de Personnel</h1>
+    
+    <h2>Présentation du projet</h2>
+    <p>Cette application est une solution de gestion du personnel permettant d’administrer les employés au sein de différentes ligues. Elle est conçue en ligne de commande (CLI) et suit une architecture 3-tiers. Actuellement, l’application est mono-utilisateur, mais l’objectif est de la rendre multi-utilisateurs en intégrant une base de données pour gérer les accès et les permissions des différents acteurs.
 
+        Chaque ligue doit être administrée par un employé désigné comme administrateur, qui est chargé de gérer les employés de sa ligue. Un super-administrateur dispose de droits étendus pour gérer tous les employés et administrateurs des différentes ligues.</p>
+    
+    <h2>Objectifs et améliorations prévues</h2>
+    <h3>Rendre l’application multi-utilisateurs</h3>
+    <p>L’application doit passer d’un mode mono-utilisateur à un mode multi-utilisateurs grâce à une base de données relationnelle (MySQL). Chaque utilisateur aura un compte avec des droits spécifiques en fonction de son rôle.</p>
+    <h3>Mettre en place des niveaux d’habilitation</h3>
+    <p>Trois niveaux d’accès doivent être définis pour garantir une gestion sécurisée :</p>
+    <h4>Employé de ligue</h4>
+    <ul>
+        <li>Peut ouvrir l’application et consulter la liste des employés comme un annuaire.</li>
+        <li>Ne possède aucun droit d’écriture sur les données.</li>
+    </ul>
+    <h4>Administrateur de ligue</h4>
+    <ul>
+        <li>Désigné parmi les employés d’une ligue.</li>
+        <li>Dispose de droits d’écriture pour gérer les employés de sa propre ligue.</li>
+        <li>Peut ajouter, modifier et supprimer les employés de sa ligue via une application bureau.</li>
+    </ul>
+    <h4>Super-administrateur</h4>
+    <ul>
+        <li>Gère toutes les ligues et tous les employés.</li>
+        <li>Peut ajouter, modifier ou supprimer les administrateurs des ligues.
+        </li>
+        <li>
+            Utilise une application en ligne de commande pour administrer le système.</li>
+    </ul>
+    <h3>Ajouter des dates d’arrivée et de départ pour chaque employé</h3>
+    <ul>
+        <li>Chaque employé doit avoir une date d’arrivée et une date de départ dans l’entreprise.</li>
+        <li>Ces informations permettent de suivre l’historique des employés et d’identifier ceux qui sont toujours en activité.</li>
+    </ul>
+    <h3>Permettre la gestion des administrateurs</h3>
+    <ul>
+        <li>Un super-administrateur doit pouvoir changer l’administrateur d’une ligue en sélectionnant un employé existant.</li>
+        <li>Cette modification doit respecter les droits d’accès définis pour chaque rôle</li>
+    </ul>
+    <h2>Fonctionnalités principales</h2>
+    <h3>Gestion des Ligues</h3>
+    <ul>
+        <li>Afficher toutes les ligues.</li>
+        <li>Ajouter une nouvelle ligue.</li>
+        <li>Sélectionner, renommer ou supprimer une ligue.</li>
+    </ul>
+    
+    <h3>Gestion des Employés</h3>
+    <ul>
+        <li>Afficher la liste des employés d’une ligue.</li>
+        <li>Ajouter un employé(Nom et prénom
+            Adresse e-mail
+            Mot de passe
+            Date d’arrivée et date de départ)</li>
+        <li>Selectionner un employé(modifier ou supprimer l' employé)</li>
+    </ul>
+    
+    <h3>Gestion des Administrateurs</h3>
+    <ul>
+        <li>Afficher l’administrateur d’une ligue.</li>
+        <li>Changer l’administrateur à partir d’une liste d’employés.</li>
+    </ul>
+    
+    <h2>Sécurité et exceptions gérées</h2>
+    <ul>
+        <li><strong>DroitsInsuffisants :</strong> si un administrateur tente d’accéder à une autre ligue.</li>
+        <li><strong>ImpossibleDeSupprimerRoot :</strong> si l’on tente de supprimer le super-administrateur.</li>
+        <li><strong>SauvegardeImpossible :</strong> si une erreur empêche l’enregistrement.</li>
+    </ul>
+    
+    <h2>Architecture technique</h2>
+    <ul>
+        <li><strong>Interface utilisateur :</strong> CLI pour le super-admin, application bureau pour les administrateurs.</li>
+        <li><strong>Couche métier :</strong> Gère la logique de gestion du personnel.</li>
+        <li><strong>Couche de persistance :</strong> Base de données MySQL.</li>
+    </ul>
     <h2>Captures d'écran</h2>
     <div class="screenshots">
         <img src="img/console.png" alt="Capture d'écran de l'interface en ligne de commande">

@@ -501,7 +501,7 @@ span {
 }
 
 .testimonial-item h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 .testimonial-item p {
@@ -535,7 +535,6 @@ span {
 .services .pres-v {
     background-color: var(--main-color);
     border-radius: 1rem;
-    height: 14rem;
     border: 0.313rem solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -554,7 +553,7 @@ span {
 .services .pres2 {
     color: white;
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5rem;
     text-decoration: underline;
 }
