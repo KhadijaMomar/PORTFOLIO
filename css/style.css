@@ -862,10 +862,13 @@ canvas {
 
     .services .pres {
         height: 12rem;
+        cursor: pointer;
+        box-sizing: border-box;
     }
 
     .services .pres-v {
         height: 18rem;
+            box-sizing: border-box;
     }
 }
 
@@ -937,11 +940,13 @@ canvas {
     .services .pres {
         height: 23rem;
         margin: 5rem;
+            box-sizing: border-box;
     }
 
     .services .pres-v {
         height: 35rem;
         margin: 4rem;
+            box-sizing: border-box;
     }
 
     .services-container .services-box {
